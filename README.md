@@ -34,10 +34,10 @@ lib
 
 ## How to run Storybook
 
-Install all dependencies using `yarn` or `yarn install`.
-`cd` into the `lib` directory `cd lib`
-Run storybook with `yarn storybook`
-A window should open up running Storybook locally in your [browser](http://localhost:6006/)
+- Install all dependencies using `yarn` or `yarn install`.
+- `cd` into the `lib` directory `cd lib`
+- Run storybook with `yarn storybook`
+- A window should open up running Storybook locally in your [browser](http://localhost:6006/)
 
 ## Tips
 
