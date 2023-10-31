@@ -1,0 +1,32 @@
+import { Meta, Typeset } from "@storybook/addon-docs"
+
+<Meta title="tokens/Gap" />
+
+# Gap
+
+The gap CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for row-gap and column-gap. We use these values to create consistent spacing between elements.
+
+```ts
+export const gap = {
+  1: "4px",
+  2: "8px",
+  3: "16px",
+  4: "24px",
+  5: "32px",
+  6: "40px",
+  7: "48px",
+  8: "64px",
+  9: "80px",
+}
+```
+
+## Usage
+
+```ts
+import { style } from "@vanilla-extract/css";
+import { vars } from '../../../variables';
+
+export const text = style({
+  fontSize: vars.gap.4,
+});
+```

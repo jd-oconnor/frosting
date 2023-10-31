@@ -1,0 +1,45 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs"
+
+<Meta title="About the library" />
+<p align="center">
+  <a
+    href="https://picsum.photos/640/360
+"
+  >
+    <picture>
+      <source
+        media="(prefers-color-scheme: light)"
+        srcset="https://picsum.photos/640/360
+"
+        alt=""
+        width="400"
+      />
+    </picture>
+  </a>
+</p>
+
+## Atomic Design
+
+The components it contains are the building blocks of all of our UI and it follows atomic design structure. Atomic Design is based on grouping components by their size and complexity and relating them to terminology used in chemistry. Those groups are Atoms, Molecules, and Organisms, each getting more complex than the last, respectively.
+
+### Atoms
+
+Atoms are the simplest form of any component. In chemistry, they are the simplest form of matter and known as the building blocks of matter. In app development, we use them as the building blocks of UI's. An example of an atom component would be a button, or a text input. We cannot break down a button nor a text input any further without compromising their functionality. That's how you know that you have an atom.
+
+### Molecules
+
+Molecules are groups of atoms that work together to perform a certain action. Say in our codebase we have created a Button component as well as a two Input components for email and password fields. If we then put them all together, we could create a login form that we can use in a web or mobile application. If the form itself were a component, it would be considered a molecule.
+
+### Organisms
+
+Organisms are the most complex of the three, making up distinct sections of a UI such as the navigation bar of a website or a custom table. A good rule of thumb would be if you have 2+ molecules put together, a combination of molecules and atoms, or 4+ atoms, it would be considered an organism.
+
+## Vanilla Extract
+
+[Vanilla Extract](https://vanilla-extract.style/documentation/getting-started/) is a zero-runtime Stylesheets-in-TypeScript library, started by Mark Dalgleish, the co-creator of CSS Modules. Mark intended to take all of the best parts of CSS Modules, paired with CSS-in-JS type syntax and DX, and introduced type safety to CSS.
+
+Vanilla  Extract has a minimal abstraction over standard CSS, works with any frontend framework or library, a high level theming system, and locally scoped classes + CSS variables.
+
+A lot of engineers love CSS-in-JS for co-located styles and writing the styles in JS. The DX of CSS-in-JS has drawn many of us to overlook the performance implications it can have on applications at scale. Rather than relying on the browser to generate CSS, vanilla-extract generates all the CSS at build time. This gives us the best of both worlds – the DX that CSS-in-JS gives us along with the co-located styles, and gives us the same performance that we get from using LESS, SASS, or regular CSS. Static CSS sheets and native CSS variables without the maintenance headache.
+
+Just like in CSS Modules, Vanilla Extract uses safe, hashed class names to ensure that they do not repeat, avoiding the risk of mixing styles.

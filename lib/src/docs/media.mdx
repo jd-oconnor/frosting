@@ -1,0 +1,33 @@
+import { Meta, Typeset } from "@storybook/addon-docs"
+
+<Meta title="tokens/Media" />
+
+# Media
+
+The media object consists of breakpoints used in media queries
+
+```ts
+export const media = {
+  mobile: "screen and (max-width: 767px)",
+  tablet: "screen and (min-width: 768px)",
+  desktop: "screen and (min-width: 1024px)",
+}
+```
+
+## Usage
+
+```ts
+import { style } from "@vanilla-extract/css"
+import { vars, media } from "../../../variables"
+
+export const text = style({
+  fontSize: vars.fonts.body2,
+  fontWeight: 400,
+
+  "@media": {
+    [`${media.mobile}`]: {
+      fontSize: vars.fonts.body2,
+    },
+  },
+})
+```

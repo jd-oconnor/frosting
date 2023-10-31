@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "include": ["."],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "emitDeclarationOnly": true,
+    "preserveSymlinks": true,
+    "baseUrl": ".",
+    "paths": {
+      "@atoms": ["./src/components/atoms"],
+      "@types": ["./src/types"],
+      "@variables": ["./src/variables"]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+import { Meta, Typeset } from "@storybook/addon-docs"
+
+<Meta title="tokens/Space" />
+
+# Space
+
+The space object consists of a set of spacing values that are used to create consistent spacing between elements.
+
+```ts
+export const space = {
+  none: "0px",
+  sm: "4px",
+  md: "8px",
+  lg: "16px",
+  xl: "32px",
+  xxl: "48px",
+}
+```
+
+## Usage
+
+```ts
+import { style } from "@vanilla-extract/css"
+import { vars } from "../../../variables"
+
+export const container = style({
+  margin: vars.space.xl,
+})
+```

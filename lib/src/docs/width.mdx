@@ -1,0 +1,29 @@
+import { Meta, Typeset } from "@storybook/addon-docs"
+
+<Meta title="tokens/Width" />
+
+# Width
+
+The width object contains the widths of the breakpoints. These can be used to set the max-width of a container.
+
+```ts
+export const width = {
+  xxs: 320,
+  xs: 414,
+  sm: 540,
+  md: 720,
+  lg: 960,
+  xl: 1140,
+}
+```
+
+## Usage
+
+```ts
+import { style } from "@vanilla-extract/css"
+import { width } from "../../../variables"
+
+export const container = style({
+  maxWidth: vars.width.lg,
+})
+```

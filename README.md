@@ -41,7 +41,7 @@ A window should open up running Storybook locally in your [browser](http://local
 
 ## Tips
 
-If working with Webpack, you may need to use the following transformer to get VE to work with Jest
+If using library with Webpack, you may need to use the following transformer to get VE to work with Jest
 
 ```ts
 const path = require("path")
@@ -68,7 +68,7 @@ module.exports = {
 }
 ```
 
-If working with Vite, inside the `vite.config.ts` file, you may need to configure the `esbuildOptions` for the `vanillaExtractPlugin` like this
+If using library with Vite, inside the `vite.config.ts` file, you may need to configure the `esbuildOptions` for the `vanillaExtractPlugin` like this
 
 ```ts
 vanillaExtractPlugin({
